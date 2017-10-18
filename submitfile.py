@@ -8,7 +8,7 @@ import pandas as pd
 
 #Inputing the data. In the third row takes care of the header
 #from the input file. Creates xtrain and xtest(variables for our model)
-In the third row, we get labels(numbers)
+#In the third row, we get labels(numbers)
 train = pd.read_csv('train.csv')
 xtrain = (train.iloc[:,1:].values).astype('float32')
 labels = train.iloc[:,0].values.astype('int32')
